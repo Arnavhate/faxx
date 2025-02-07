@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Browser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h2>Simple Web Browser</h2>
+    <div class="toolbar">
+        <input type="text" id="urlInput" placeholder="Enter URL (e.g., https://google.com)">
+        <button onclick="loadPage()">Go</button>
+        <button onclick="goBack()">←</button>
+        <button onclick="goForward()">→</button>
+    </div>
+    
+    <iframe id="browser"></iframe>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
