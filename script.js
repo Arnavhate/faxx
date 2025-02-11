@@ -9,7 +9,7 @@ function loadPage() {
     }
 
     let iframe = document.getElementById("browser");
-    iframe.src = "https://cors-anywhere.herokuapp.com/" + url;
+    iframe.src = "https://api.allorigins.win/raw?url=" + encodeURIComponent(url);
 
 
 
