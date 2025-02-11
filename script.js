@@ -7,7 +7,7 @@ function loadPage() {
     if (!url.startsWith("http")) {
         url = "https://" + url;  // Add https:// if missing
     }
-
+    
     let iframe = document.getElementById("browser");
     iframe.src = "https://api.allorigins.win/raw?url=" + encodeURIComponent(url);
 
